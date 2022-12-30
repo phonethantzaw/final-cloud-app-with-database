@@ -147,8 +147,6 @@ def show_exam_result(request, course_id, submission_id):
     choices = submission.choices.all()
     total = 0
     points_earned = 0
-    final_grade = 0
-    print("Show_Exam " , submission)
 
     for question in course.question_set.all():
         total += question.grade
